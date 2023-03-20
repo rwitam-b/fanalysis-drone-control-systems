@@ -1,0 +1,560 @@
+{
+    "PX4_FMU_V5": {
+        "gyroscope": "ICM-20689, BMI055",
+        "mag_accel": "IST8310",
+        "barometer": "MS5611",
+        "compass": "null"
+    },
+    "CUBEPILOT_CUBEORANGE": {
+        "gyroscope": "ICM20948, ICM20649, ICM20602",
+        "mag_accel": "ICM20948, ICM20649, ICM20602",
+        "barometer": "MS5611",
+        "compass": "ICM20948"
+    },
+    "MRO_CTRL_ZERO_H7": {
+        "gyroscope": "Invensense/TDK ICM-20602 (6DOF), TDK ICM-20948 (9DOF)",
+        "mag_accel": "AK09916 inside ICM-20948",
+        "barometer": "Infineon DPS310",
+        "compass": "null"
+    },
+    "PX4_SITL": {
+        "gyroscope": "null",
+        "mag_accel": "null",
+        "barometer": "null",
+        "compass": "null"
+    },
+    "FLYBOTIX_AUTOPILOT_V0": {
+        "gyroscope": "null",
+        "mag_accel": "null",
+        "barometer": "null",
+        "compass": "null"
+    },
+    "AUAV_X21": {
+        "gyroscope": "MPU9250 (9DOF), ICM-20608 (6DOF)",
+        "mag_accel": "null",
+        "barometer": "MEAS MS5611",
+        "compass": "null"
+    },
+    "PX4_FMU_V3": {
+        "gyroscope": "null",
+        "mag_accel": "null",
+        "barometer": "MS5611",
+        "compass": "null"
+    },
+    "PX4_FMU_V2": {
+        "gyroscope": "MPU9250, ICM 20xxx, L3GD20",
+        "mag_accel": "LSM303D",
+        "barometer": "MS5611",
+        "compass": "null"
+    },
+    "MODALAI_FC_V1": {
+        "gyroscope": "null",
+        "mag_accel": "null",
+        "barometer": "null",
+        "compass": "null"
+    },
+    "PX4_FMU_V6C": {
+        "gyroscope": "null",
+        "mag_accel": "null",
+        "barometer": "null",
+        "compass": "null"
+    },
+    "WATTS_FMU_V5X": {
+        "gyroscope": "null",
+        "mag_accel": "null",
+        "barometer": "null",
+        "compass": "null"
+    },
+    "CUBEPILOT_CUBEYELLOW": {
+        "gyroscope": "null",
+        "mag_accel": "null",
+        "barometer": "null",
+        "compass": "null"
+    },
+    "CUAV_NORA": {
+        "gyroscope": "null",
+        "mag_accel": "null",
+        "barometer": "null",
+        "compass": "null"
+    },
+    "CODEV_DP1000_V2": {
+        "gyroscope": "null",
+        "mag_accel": "null",
+        "barometer": "null",
+        "compass": "null"
+    },
+    "PX4_FMU_V6X": {
+        "gyroscope": "null",
+        "mag_accel": "null",
+        "barometer": "null",
+        "compass": "null"
+    },
+    "PX4FMU_V2": {
+        "gyroscope": "MPU9250, ICM 20xxx, L3GD20",
+        "mag_accel": "LSM303D",
+        "barometer": "MS5611",
+        "compass": "null"
+    },
+    "PX4_FMU_V4": {
+        "gyroscope": "ICM-20608, MPU9250",
+        "mag_accel": "HMC5983",
+        "barometer": "MS5611",
+        "compass": "null"
+    },
+    "PX4FMU_V4": {
+        "gyroscope": "ICM-20608, MPU9250",
+        "mag_accel": "HMC5983",
+        "barometer": "MS5611",
+        "compass": "null"
+    },
+    "PX4_FMU_V4PRO": {
+        "gyroscope": "ICM-20608-G",
+        "mag_accel": "MPU-9250",
+        "barometer": "null",
+        "compass": "LIS3MDL"
+    },
+    "PX4_FMU_V5X": {
+        "gyroscope": "null",
+        "mag_accel": "null",
+        "barometer": "null",
+        "compass": "null"
+    },
+    "HOLYBRO_KAKUTEH7": {
+        "gyroscope": "null",
+        "mag_accel": "null",
+        "barometer": "null",
+        "compass": "null"
+    },
+    "UVIFY_CORE": {
+        "gyroscope": "null",
+        "mag_accel": "null",
+        "barometer": "null",
+        "compass": "null"
+    },
+    "MODALAI_RB5_FLIGHT": {
+        "gyroscope": "null",
+        "mag_accel": "null",
+        "barometer": "null",
+        "compass": "null"
+    },
+    "CUAV_X7PRO": {
+        "gyroscope": "null",
+        "mag_accel": "null",
+        "barometer": "null",
+        "compass": "null"
+    },
+    "THEPEACH_K1": {
+        "gyroscope": "null",
+        "mag_accel": "null",
+        "barometer": "null",
+        "compass": "null"
+    },
+    "DRONEYEE_ZYRACER": {
+        "gyroscope": "null",
+        "mag_accel": "null",
+        "barometer": "null",
+        "compass": "null"
+    },
+    "SKYPERSONIC_FC_V3": {
+        "gyroscope": "null",
+        "mag_accel": "null",
+        "barometer": "null",
+        "compass": "null"
+    },
+    "BRAINYBEE_FMU_V5": {
+        "gyroscope": "null",
+        "mag_accel": "null",
+        "barometer": "null",
+        "compass": "null"
+    },
+    "YUNEEC_TAP_V3": {
+        "gyroscope": "null",
+        "mag_accel": "null",
+        "barometer": "null",
+        "compass": "null"
+    },
+    "TAP_V3": {
+        "gyroscope": "null",
+        "mag_accel": "null",
+        "barometer": "null",
+        "compass": "null"
+    },
+    "PIESAT_HT_F01": {
+        "gyroscope": "null",
+        "mag_accel": "null",
+        "barometer": "null",
+        "compass": "null"
+    },
+    "RING_ZEUS": {
+        "gyroscope": "null",
+        "mag_accel": "null",
+        "barometer": "null",
+        "compass": "null"
+    },
+    "YUNEEC_TAP_V2": {
+        "gyroscope": "null",
+        "mag_accel": "null",
+        "barometer": "null",
+        "compass": "null"
+    },
+    "ARK_FMU_V6X": {
+        "gyroscope": "null",
+        "mag_accel": "null",
+        "barometer": "null",
+        "compass": "null"
+    },
+    "DROTEK_IO_STAR": {
+        "gyroscope": "null",
+        "mag_accel": "null",
+        "barometer": "null",
+        "compass": "null"
+    },
+    "OMNIBUS_F4SD": {
+        "gyroscope": "null",
+        "mag_accel": "null",
+        "barometer": "null",
+        "compass": "null"
+    },
+    "Spot-1": {
+        "gyroscope": "null",
+        "mag_accel": "null",
+        "barometer": "null",
+        "compass": "null"
+    },
+    "MATEK_H743": {
+        "gyroscope": "null",
+        "mag_accel": "null",
+        "barometer": "null",
+        "compass": "null"
+    },
+    "BEAGLEBONE_BLUE": {
+        "gyroscope": "null",
+        "mag_accel": "null",
+        "barometer": "null",
+        "compass": "null"
+    },
+    "AMOVLAB_P450": {
+        "gyroscope": "null",
+        "mag_accel": "null",
+        "barometer": "null",
+        "compass": "null"
+    },
+    "TEAL_FMU_V5_MK1": {
+        "gyroscope": "null",
+        "mag_accel": "null",
+        "barometer": "null",
+        "compass": "null"
+    },
+    "VANTAGE_VESPER": {
+        "gyroscope": "null",
+        "mag_accel": "null",
+        "barometer": "null",
+        "compass": "null"
+    },
+    "PX4FMU_V5": {
+        "gyroscope": "ICM-20689, BMI055",
+        "mag_accel": "IST8310",
+        "barometer": "MS5611",
+        "compass": "null"
+    },
+    "CODEV_AQUILA_V2": {
+        "gyroscope": "null",
+        "mag_accel": "null",
+        "barometer": "null",
+        "compass": "null"
+    },
+    "MMC_SK3_V1": {
+        "gyroscope": "null",
+        "mag_accel": "null",
+        "barometer": "null",
+        "compass": "null"
+    },
+    "AMOVLAB_P230": {
+        "gyroscope": "null",
+        "mag_accel": "null",
+        "barometer": "null",
+        "compass": "null"
+    },
+    "TAP_V2": {
+        "gyroscope": "null",
+        "mag_accel": "null",
+        "barometer": "null",
+        "compass": "null"
+    },
+    "HOLYBRO_DURANDAL_V1": {
+        "gyroscope": "null",
+        "mag_accel": "null",
+        "barometer": "null",
+        "compass": "null"
+    },
+    "SKYPUP_F405": {
+        "gyroscope": "null",
+        "mag_accel": "null",
+        "barometer": "null",
+        "compass": "null"
+    },
+    "SKY_DRONES_SMARTAP_AIRLINK": {
+        "gyroscope": "null",
+        "mag_accel": "null",
+        "barometer": "null",
+        "compass": "null"
+    },
+    "CODEV_TALON1000": {
+        "gyroscope": "null",
+        "mag_accel": "null",
+        "barometer": "null",
+        "compass": "null"
+    },
+    "NXP_FMUK66_V3": {
+        "gyroscope": "null",
+        "mag_accel": "null",
+        "barometer": "null",
+        "compass": "null"
+    },
+    "HOLYBRO_KAKUTEF7": {
+        "gyroscope": "null",
+        "mag_accel": "null",
+        "barometer": "null",
+        "compass": "null"
+    },
+    "CODEV_DP1000": {
+        "gyroscope": "null",
+        "mag_accel": "null",
+        "barometer": "null",
+        "compass": "null"
+    },
+    "MODALAI_FC_V2": {
+        "gyroscope": "null",
+        "mag_accel": "null",
+        "barometer": "null",
+        "compass": "null"
+    },
+    "MRO_X21": {
+        "gyroscope": "null",
+        "mag_accel": "null",
+        "barometer": "null",
+        "compass": "null"
+    },
+    "MRO_CTRL_ZERO_F7": {
+        "gyroscope": "null",
+        "mag_accel": "null",
+        "barometer": "null",
+        "compass": "null"
+    },
+    "MATEK_H743_SLIM": {
+        "gyroscope": "null",
+        "mag_accel": "null",
+        "barometer": "null",
+        "compass": "null"
+    },
+    "LUMENIER_FMU_V5": {
+        "gyroscope": "null",
+        "mag_accel": "null",
+        "barometer": "null",
+        "compass": "null"
+    },
+    "AEROFC_V1": {
+        "gyroscope": "null",
+        "mag_accel": "null",
+        "barometer": "null",
+        "compass": "null"
+    },
+    "RADIOLINK_MINIPIX_V1": {
+        "gyroscope": "null",
+        "mag_accel": "null",
+        "barometer": "null",
+        "compass": "null"
+    },
+    "MBD_FCC_201_CORNERSTONE": {
+        "gyroscope": "null",
+        "mag_accel": "null",
+        "barometer": "null",
+        "compass": "null"
+    },
+    "PX4_SP20": {
+        "gyroscope": "null",
+        "mag_accel": "null",
+        "barometer": "null",
+        "compass": "null"
+    },
+    "PX4_FMU_V4GLUAS": {
+        "gyroscope": "null",
+        "mag_accel": "null",
+        "barometer": "null",
+        "compass": "null"
+    },
+    "SITL": {
+        "gyroscope": "null",
+        "mag_accel": "null",
+        "barometer": "null",
+        "compass": "null"
+    },
+    "PX4_FCC_200": {
+        "gyroscope": "null",
+        "mag_accel": "null",
+        "barometer": "null",
+        "compass": "null"
+    },
+    "ROBOTICAN_EFC": {
+        "gyroscope": "null",
+        "mag_accel": "null",
+        "barometer": "null",
+        "compass": "null"
+    },
+    "PX4_FC_111": {
+        "gyroscope": "null",
+        "mag_accel": "null",
+        "barometer": "null",
+        "compass": "null"
+    },
+    "MAXWELL_FMU_V3": {
+        "gyroscope": "null",
+        "mag_accel": "null",
+        "barometer": "null",
+        "compass": "null"
+    },
+    "INTEL_AEROFC_V1": {
+        "gyroscope": "null",
+        "mag_accel": "null",
+        "barometer": "null",
+        "compass": "null"
+    },
+    "PX4_JETSON_TX2": {
+        "gyroscope": "null",
+        "mag_accel": "null",
+        "barometer": "null",
+        "compass": "null"
+    },
+    "EFYTECH_SITL": {
+        "gyroscope": "null",
+        "mag_accel": "null",
+        "barometer": "null",
+        "compass": "null"
+    },
+    "PX4_AIRPI2": {
+        "gyroscope": "null",
+        "mag_accel": "null",
+        "barometer": "null",
+        "compass": "null"
+    },
+    "GTEN_UPAIR3": {
+        "gyroscope": "null",
+        "mag_accel": "null",
+        "barometer": "null",
+        "compass": "null"
+    },
+    "tap-v18s02": {
+        "gyroscope": "null",
+        "mag_accel": "null",
+        "barometer": "null",
+        "compass": "null"
+    },
+    "INTEL_SS": {
+        "gyroscope": "null",
+        "mag_accel": "null",
+        "barometer": "null",
+        "compass": "null"
+    },
+    "EMLID_NAVIO2": {
+        "gyroscope": "null",
+        "mag_accel": "null",
+        "barometer": "null",
+        "compass": "null"
+    },
+    "LHCZ_SITL": {
+        "gyroscope": "null",
+        "mag_accel": "null",
+        "barometer": "null",
+        "compass": "null"
+    },
+    "LHCZ_FMU_V5": {
+        "gyroscope": "null",
+        "mag_accel": "null",
+        "barometer": "null",
+        "compass": "null"
+    },
+    "UVR_POWER": {
+        "gyroscope": "null",
+        "mag_accel": "null",
+        "barometer": "null",
+        "compass": "null"
+    },
+    "FCUVS_V2": {
+        "gyroscope": "null",
+        "mag_accel": "null",
+        "barometer": "null",
+        "compass": "null"
+    },
+    "PX4FMU_V4PRO": {
+        "gyroscope": "null",
+        "mag_accel": "null",
+        "barometer": "null",
+        "compass": "null"
+    },
+    "AV_X_V1": {
+        "gyroscope": "null",
+        "mag_accel": "null",
+        "barometer": "null",
+        "compass": "null"
+    },
+    "MINDPX_V2": {
+        "gyroscope": "null",
+        "mag_accel": "null",
+        "barometer": "null",
+        "compass": "null"
+    },
+    "EAGLE": {
+        "gyroscope": "null",
+        "mag_accel": "null",
+        "barometer": "null",
+        "compass": "null"
+    },
+    "NXPHLITE_V3": {
+        "gyroscope": "null",
+        "mag_accel": "null",
+        "barometer": "null",
+        "compass": "null"
+    },
+    "OCPOC": {
+        "gyroscope": "null",
+        "mag_accel": "null",
+        "barometer": "null",
+        "compass": "null"
+    },
+    "CRAZYFLIE": {
+        "gyroscope": "null",
+        "mag_accel": "null",
+        "barometer": "null",
+        "compass": "null"
+    },
+    "BEBOP": {
+        "gyroscope": "null",
+        "mag_accel": "null",
+        "barometer": "null",
+        "compass": "null"
+    },
+    "RPI": {
+        "gyroscope": "null",
+        "mag_accel": "null",
+        "barometer": "null",
+        "compass": "null"
+    },
+    "AEROCORE2": {
+        "gyroscope": "null",
+        "mag_accel": "null",
+        "barometer": "null",
+        "compass": "null"
+    },
+    "PHENIX_GH": {
+        "gyroscope": "null",
+        "mag_accel": "null",
+        "barometer": "null",
+        "compass": "null"
+    },
+    "SPYAPMISSION": {
+        "gyroscope": "null",
+        "mag_accel": "null",
+        "barometer": "null",
+        "compass": "null"
+    }
+}
