@@ -22,8 +22,6 @@ from helper import get_airframe_name, get_flight_mode_changes, load_ulog_file
 pickle.HIGHEST_PROTOCOL = 4
 
 # Gathering one row worth of data
-
-
 def extract_fields_from_log(log_metadata, log_link, ulog):
     row_data = {}
     row_data['link'] = log_link
@@ -170,6 +168,16 @@ def extract_fields_from_log(log_metadata, log_link, ulog):
         pass
     row_data['kill_switch_engaged'] = kill_switch_engaged
 
+    # Parse console messages from OS to capture GPS module information
+    console_messages = []
+    row_data['gps_metadata'] = ""
+    if 'boot_console_output' in ulog.msg_info_multiple_dict:
+        console_output = ulog.msg_info_multiple_dict['boot_console_output'][0]
+        console_output = ''.join(console_output)
+        console_messages = console_output.split("\n")
+    if len(console_messages) > 0:
+        row_data['gps_metadata'] = "; ".join([f"<{message}>" for message in console_messages if "INFO  [gps]" in message])
+
     # Stuff that I did not find
     row_data['gyroscope'] = ""
     row_data['mag_accel'] = ""
@@ -195,12 +203,12 @@ def process_log_file(log_metadata):
 
 if __name__ == "__main__":
     log_db_file = "F:\\flight_review-main\\app\\download_db.json"
-    log_db = data = json.load(open(log_db_file))
+    log_db = json.load(open(log_db_file))
 
     results = []
     failed = []
     with tqdm(total=len(log_db)) as pbar:
-        with ProcessPoolExecutor(max_workers=os.cpu_count()) as ex:
+        with ProcessPoolExecutor(max_workers=os.cpu_count()//2) as ex:
             futures = [ex.submit(process_log_file, log_metadata) for log_metadata in log_db]
             for future in as_completed(futures):
                 processed_data = future.result()
@@ -210,7 +218,7 @@ if __name__ == "__main__":
 
     # Save output to an Excel Sheet
     df = pd.DataFrame.from_dict(results)
-    new_df = df[['link', 'upload_date', 'gps_data', 'description', 'airframe_type', 'airframe_name', 'hardware', 'gyroscope', 'mag_accel', 'barometer', 'compass', 'software', 'flight_duration', 'start_time', 'rating',
+    new_df = df[['link', 'upload_date', 'gps_data', 'gps_metadata', 'description', 'airframe_type', 'airframe_name', 'hardware', 'gyroscope', 'mag_accel', 'barometer', 'compass', 'software', 'flight_duration', 'start_time', 'rating',
                  'error', 'flight_modes', 'soft_release_date', 'remote_control', 'kill_switch_engaged', 'altitude_min', 'altitude_avg', 'altitude_max', 'waypoints', 'terrain_following', 'object_avoidance', 'parameters']]
 
     # Handle mistyped hardware names
@@ -218,4 +226,22 @@ if __name__ == "__main__":
     new_df['hardware'] = new_df['hardware'].replace(['PX4FMU_V4'], 'PX4_FMU_V4')
     new_df['hardware'] = new_df['hardware'].replace(['PX4FMU_V4PRO'], 'PX4_FMU_V4PRO')
     new_df['hardware'] = new_df['hardware'].replace(['PX4FMU_V5'], 'PX4_FMU_V5')
-    new_df.to_hdf('parsed_df.hdf', 'df')
+
+    # Update the sensors available in each hardware based on "hardware_lookup.json"
+    hw_lookup = json.load(open("hardware_lookup.json"))
+    for hw in hw_lookup:
+        g = hw_lookup[hw]["gyroscope"]
+        m = hw_lookup[hw]["mag_accel"]
+        b = hw_lookup[hw]["barometer"]
+        c = hw_lookup[hw]["compass"]
+        if g or m or b or c:
+            print(f"Updating for {hw}")
+            hw_mask = new_df['hardware'] == hw
+            new_df.loc[hw_mask, "gyroscope"] = g
+            new_df.loc[hw_mask, "mag_accel"] = m
+            new_df.loc[hw_mask, "barometer"] = b
+            new_df.loc[hw_mask, "compass"] = c
+
+    # Saving processed DataFrame to file
+    new_df.to_hdf('parsed_df2.hdf', 'df')
+    new_df.to_excel('parsed_df2.xlsx', index=False, engine='xlsxwriter')

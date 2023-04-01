@@ -1,3 +1,2 @@
-df.xlsx
-hw_count.xlsx
-parsed_df.hdf
+*.xlsx
+*.hdf
