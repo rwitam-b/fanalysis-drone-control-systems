@@ -1,0 +1,63 @@
+@font-face {
+  font-family: 'Avenir';
+  src: url('./fonts/avenir_ff/AvenirLTStd-Black.otf') format('opentype');
+}
+
+body {
+  font-family: "Avenir", sans-serif !important;
+  max-height: 100vh;
+}
+
+.ant-card-head-title {
+  font-family: "Avenir", sans-serif !important;
+}
+
+.layout {
+  background: linear-gradient(320deg, #f27121, #e94057, #8a2387);
+  background-size: 200% 200%;
+  min-height: 100vh;
+  height: 100%;
+  animation: gradient 5s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+      background-position: 0% 50%;
+  }
+
+  50% {
+      background-position: 100% 50%;
+  }
+
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
+.headerStyle {
+  padding-top: 20px;
+  color: white;
+  font-family: "Avenir";
+  font-size: 60px;
+  user-select: none;
+}
+
+.glass-card {
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  /* border: 1px solid rgba(255, 255, 255, 0.3); */
+}
+
+.glass-card-2 {
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  /* backdrop-filter: blur(5px); */
+  /* -webkit-backdrop-filter: blur(5px); */
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
